@@ -1,0 +1,19 @@
+Name: Tizen IVI X Auto
+Schedule: "*"
+Active: True
+Platform: IVI
+FileName: ivi-main-x-auto
+Part: tizen-ivi
+Kernel: kernel-adaptation-intel-automotive
+Architecture: ia32
+Desktop: None
+Groups:
+    - IVI Support
+    - Base X
+    - IVI X
+    - IVI Applications
+RemovePackages:
+    - initscripts
+PostScripts:
+    - users
+    - rpm

@@ -1,0 +1,161 @@
+Sat Feb 25 00:53:40 UTC 2012 - tracy.graydon@intel.com
+- Removed the now extraneous live repos for IVI from repos.yaml, etc. 
+
+Fri Feb 24 08:40:41 UTC 2012 - tracy.graydon@intel.com
+- Yamlfy IVI kickstarts. 
+
+* Thu Feb 23 2012 Rolla Selbak <rolla.n.selbak@intel.com> - 2.06
+- Renamed PR3 to Handset (pinetrail, blackbay)
+
+* Thu Feb 23 2012 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 2.05
+- Adding gzip disk compression for PR3 Intel image
+
+* Thu Feb 23 2012 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 2.03
+- Renaming --save-kernel parameter for PR3 Medfield Intel image to --copy-kernel new name
+
+* Thu Feb 23 2012 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 2.02
+- Renamed Tizen Base to Base System for one of the IVI images
+
+* Wed Feb 22 2012 Rolla Selbak <rolla.n.selbak@intel.com> - 2.01
+- Proper translation for pr3-* yaml files.  Cleaned up PR3 base config.
+
+* Mon Feb 20 2012 Jian-feng Ding <jian-feng.ding@intel.com> - 0.75
+- Update repos configurations using snapshots
+
+* Fri Feb 17 2012 Li Yi <yi.a.li@intel.com> - 0.74git
+- Adding image for PR3
+
+* Wed Feb 08 2012 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.74
+- Disabling IVI images for Tizen Trunk (Netbook)
+
+* Fri Feb 03 2012 Tracy Graydon <tracy.graydon@intel.com> - 0.73
+- Git Tag: 20120203.1
+  928eebd: IVI changes to fix certs issue, and add devel stuff
+
+* Fri Feb 03 2012 Tracy Graydon <tracy.graydon@intel.com> - 0.71
+- Git Tag: 20120203.0
+  f038f56: Image configs fix
+
+* Fri Jan 20 2012 Ulf Hofemeier <ulf.hofemeier@intel.com> - 0.64
+- Git Tag: 20120120.0
+  4b4d3d4: Disable SaveRepo --save parameter for Tizen Netbook image generation.
+
+* Wed Jan 18 2012 Ulf Hofemeier <ulf.hofemeier@intel.com> - 0.63
+- Git Tag: 20120118.0
+  8d3e6fe: Adding Tizen Webapi Apps group to Pinetrail and Cedartrail image configuration
+
+* Thu Jan 12 2012 Tracy Graydon <tracy.graydon@intel.com> - 0.62
+- Git Tag: 20120112.0
+  cbc8a7f: turn on saverepos for IVI images
+
+* Mon Jan 09 2012 Ulf Hofemeier <ulf.hofemeier@intel.com> - 0.60
+- Git Tag: 20120109.1
+  a4ec493: Added update.post script appending the DMZ chain cert to ca-bundle.crt to make zypper updates work properly.
+
+* Mon Jan 09 2012 Ulf Hofemeier <ulf.hofemeier@intel.com> - 0.59
+- Git Tag: 20120109.0
+  e061adc: Added update.post script appending the DMZ chain cert to ca-bundle.crt to make zypper updates work properly.
+
+* Wed Jan 04 2012 Tracy Graydon <tracy.graydon@intel.com> - 0.57
+- Git Tag: 20120104.1
+  a54d423: Bug# PVIVI-10: don't save repos for IVI images
+
+* Wed Jan 04 2012 Tracy Graydon <tracy.graydon@intel.com> - 0.57
+- Git Tag: 20120104.0
+  a54d423: Bug# PVIVI-10: don't save repos for IVI images
+
+* Mon Dec 19 2011 Prajwal Mohan <prajwal.karur.mohan@intel.com> - 0.56
+- Git Tag: 20111219.0
+  9d751d4: Adding TV images back. Updating to version 0.56
+
+* Thu Dec 15 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.55
+- Git Tag: 20111215.1
+  855fa85: spec
+
+* Thu Dec 15 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.53
+- Git Tag: 20111215.0
+  e962186: IVI changes
+
+* Wed Dec 14 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.47
+- Git Tag: 20111214.2
+  98468cc: removed cetv stuff to get package to build.
+
+* Wed Dec 14 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.43
+- Git Tag: 20111214.1
+  21fcda2: revert an IVI change
+
+* Wed Dec 14 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.42
+- Git Tag: 20111214.0
+  e90d4e7: IVI changes
+
+* Thu Dec 8 2011 Prajwal Mohan <prajwal.karur.mohan@intel.com> - 0.41
+- Adding image for TV
+
+* Thu Dec 01 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.40
+- Fix X pattern name in ivi yaml.  
+
+* Tue Nov 29 2011 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.38
+- Renamed MeeGo in Tizen
+
+* Mon Nov 28 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.37
+- IVI changes. Drop language packages from IVI. Drop base dev from IVI in configurationis.yaml
+
+* Tue Nov 22 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.35
+- Update IVI groups to use new Tizen naming. i.e. Tizen IVI, etc.
+- Remove extra net-tool package for IVI yaml that is now in a pattern. 
+
+* Mon Nov 21 2011 Tracy Graydon <tracy.graydon@intel.com> - 0.35
+- IVI Updates
+
+* Fri Nov 18 2011 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.34
+- Renamed MeeGo Basea Development to Tizen Base Development
+
+* Mon Nov 14 2011 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.32
+- Updating repos.yaml to final URL
+
+* Fri Nov 04 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.30
+- Makign a new configuration for cedartrail. reverting changes to pinetrail
+
+* Fri Nov 04 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.26
+- Adding non-oss repo to netbook ks file
+
+* Tue Nov 01 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.25
+- Enabling uxlaunch-symplink-nb.post for netbook images
+
+* Fri Oct 28 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.24
+- switching from kernel to kernel-adaptation-pc
+
+* Fri Oct 28 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.23
+- disabling printing group for netbook images
+
+* Fri Oct 28 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.22
+- Removing meego-ivi group from ivi images
+- Removing chromium from ks file temporarily
+
+* Tue Oct 25 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.19
+- Removing IVI Desktop and IVI Applications group from images
+
+* Tue Oct 25 2011 Prajwal Mohan <prajwal.karur.mohan@linux.intel.com> - 0.18
+- Removing meego compliance from IVI group
+
+* Tue Oct 25 2011 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.15
+- Disabling adobe flash for right now
+
+* Mon Oct 24 2011 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.14
+- Replaced kernel-adaptation-pinetrail with kernel 2.6.37 from 1.2.0 release
+
+* Mon Oct 24 2011 Ulf Hofemeier <ulf.hofemeier@linux.intel.com> - 0.11
+- Re-enabling Adobe repo to add flash to Tizen image.
+
+* Thu Oct 13 2011 Jian-feng Ding <jian-feng.ding@intel.com> - 0.4
+- 0.4: sync with meego 1.2
+
+* Thu Oct 13 2011 Jian-feng Ding <jian-feng.ding@intel.com> - 0.3
+- 0.3 release: remove non-oss repos
+
+* Thu Oct 13 2011 Jian-feng Ding <jian-feng.ding@intel.com> - 0.2
+- 0.2 release: netbook and ivi images added
+
+* Tue Sep 27 2011 Jian-feng Ding <jian-feng.ding@intel.com> - 0.1
+- Initial Release
+

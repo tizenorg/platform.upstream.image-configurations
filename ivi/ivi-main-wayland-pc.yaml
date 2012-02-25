@@ -1,0 +1,20 @@
+Name: Tizen IVI Wayland PC
+Schedule: "*"
+Active: True
+Platform: IVI
+FileName: ivi-main-wayland-pc
+Part: tizen-ivi
+Kernel: kernel-adaptation-pc
+Architecture: ia32
+Desktop: None
+Groups:
+    - IVI Support
+    - IVI Wayland for Pinetrail
+    - IVI Applications
+ExtraPackages:
+    - udev-rules-netbook
+RemovePackages:
+    - initscripts
+PostScripts:
+    - users
+    - rpm

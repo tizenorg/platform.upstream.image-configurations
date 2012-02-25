@@ -1,0 +1,16 @@
+Name: Tizen IVI Min Auto
+Schedule: "*"
+Active: True
+Platform: IVI
+FileName: ivi-main-min-auto
+Part: tizen-ivi
+Kernel: kernel-adaptation-intel-automotive
+Architecture: ia32
+Desktop: None
+Groups:
+    - IVI Support
+RemovePackages:
+    - initscripts
+PostScripts:
+    - users
+    - rpm

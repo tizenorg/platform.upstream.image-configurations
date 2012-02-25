@@ -1,0 +1,4 @@
+# ROOT fs partition
+part / --size=800 --ondisk mmcblk0p --fstype=ext4 --label=platform
+# DATA partition
+part /opt/ --size=1800 --ondisk mmcblk0p --fstype=ext4 --label=data

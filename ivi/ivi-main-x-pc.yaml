@@ -1,0 +1,18 @@
+Name: Tizen IVI X PC
+Schedule: "*"
+Active: True
+Platform: IVI
+FileName: ivi-main-x-pc
+Part: tizen-ivi
+Kernel: kernel-adaptation-pc
+Architecture: ia32
+Desktop: None
+Groups:
+    - IVI Support
+    - Base X Server
+    - IVI X for Pinetrail
+    - IVI Applications
+ExtraPackages:
+    - udev-rules-netbook
+RemovePackages:
+    - initscripts

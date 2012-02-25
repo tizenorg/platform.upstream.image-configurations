@@ -1,0 +1,13 @@
+Name: Tizen Handset Pinetrail
+Schedule: "*"
+Active: True
+Platform: Handset
+FileName: handset-pinetrail
+Part: tizen-handset
+Mic2Options: -f raw --copy-kernel 
+Groups:
+    - Pinetrail Support
+PostScripts:
+    - users
+    - xorg
+    - rpm

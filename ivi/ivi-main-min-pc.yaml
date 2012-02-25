@@ -1,0 +1,18 @@
+Name: Tizen IVI Min PC
+Schedule: "*"
+Active: True
+Platform: IVI
+FileName: ivi-main-min-pc
+Part: tizen-ivi
+Kernel: kernel-adaptation-pc
+Architecture: ia32
+Desktop: None
+Groups:
+    - IVI Support
+ExtraPackages:
+    - udev-rules-netbook
+RemovePackages:
+    - initscripts
+PostScripts:
+    - users
+    - rpm

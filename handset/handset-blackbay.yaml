@@ -1,0 +1,15 @@
+Name: Tizen Handset Blackbay
+Schedule: "*"
+Active: True
+Platform: Handset
+FileName: handset-blackbay
+Mic2Options: -f loop --copy-kernel --compress-disk-image=gz
+Groups:
+    - Medfield Support
+PostScripts:
+    - users
+    - inittab
+    - usb-networking
+    - rpm
+Repos:
+    - Tizen-pr3

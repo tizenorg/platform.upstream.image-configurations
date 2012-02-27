@@ -47,7 +47,7 @@ IVI:
     Desktop: None
     Mic2Options: -f raw
     Groups:
-        - Base System
+        - IVI Base
     Repos:
         - Tizen-base
         - Tizen-main

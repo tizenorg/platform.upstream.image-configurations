@@ -13,12 +13,12 @@ Repositories:
         Options: --save  --ssl_verify=no
     -   Name: Tizen-main-public
         Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzmain-pub/@ARCH@/packages/
-        Options: --save
+        Options: --save --ssl_verify=no
     -   Name: Tizen-main-rs
         Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzmain-rs/@ARCH@/packages/
-        Options: --save
+        Options: --save --ssl_verify=no
     -   Name: Tizen-non-oss
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/non-oss/standard/  --save 
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/non-oss/@ARCH@/packages/
         Options: --save  --ssl_verify=no
     -   Name: Tizen-pr3
         Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzpr3/@ARCH@/packages/

@@ -10,7 +10,6 @@ Desktop: None
 Groups:
     - IVI Support
     - IVI Wayland
-    - IVI Applications
 RemovePackages:
     - initscripts
 PostScripts:

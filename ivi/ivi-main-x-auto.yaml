@@ -9,9 +9,8 @@ Architecture: ia32
 Desktop: None
 Groups:
     - IVI Support
-    - Base X
+    - Base X Server
     - IVI X
-    - IVI Applications
 RemovePackages:
     - initscripts
 PostScripts:

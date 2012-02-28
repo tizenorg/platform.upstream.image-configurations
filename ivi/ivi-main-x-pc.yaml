@@ -11,7 +11,6 @@ Groups:
     - IVI Support
     - Base X Server
     - IVI X for Pinetrail
-    - IVI Applications
 ExtraPackages:
     - udev-rules-netbook
 RemovePackages:

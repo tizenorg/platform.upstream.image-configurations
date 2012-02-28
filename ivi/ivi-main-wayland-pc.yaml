@@ -10,7 +10,6 @@ Desktop: None
 Groups:
     - IVI Support
     - IVI Wayland for Pinetrail
-    - IVI Applications
 ExtraPackages:
     - udev-rules-netbook
 RemovePackages:

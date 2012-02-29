@@ -45,7 +45,7 @@ IVI:
     StartX: False
     Architecture: ia32
     Desktop: None
-    Mic2Options: -f raw
+    Mic2Options: -f raw --compress-disk-image=bz2
     Groups:
         - IVI Base
     Repos:

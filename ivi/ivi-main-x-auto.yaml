@@ -16,5 +16,5 @@ RemovePackages:
 PostScripts:
     - users
     - rpm
-REPOS: 
+Repos: 
     - Tizen-non-oss

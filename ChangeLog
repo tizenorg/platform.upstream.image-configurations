@@ -1,5 +1,11 @@
 2012-02-28  Tracy Graydon <tracy.graydon@intel.com>
 
+  * VERSION, packaging/image-configurations.spec: Version, spec
+
+  * ChangeLog: Changelog update
+
+  * ChangeLog: Changelog update
+
   * VERSION: Version bump
 
   * ivi/ivi-main-wayland-auto.yaml, ivi/ivi-main-x-auto.yaml,

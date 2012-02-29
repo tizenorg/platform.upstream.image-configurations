@@ -1,5 +1,12 @@
 2012-02-28  Tracy Graydon <tracy.graydon@intel.com>
 
+  * VERSION: Version bump
+
+  * ivi/ivi-main-wayland-auto.yaml, ivi/ivi-main-x-auto.yaml,
+  packaging/image-configurations.spec: ARRRRGGGHHHHHH
+
+  * ChangeLog: ChangeLog update
+
   * VERSION: change ver to 0.8
 
   * VERSION: Bump ver to 8

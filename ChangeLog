@@ -1,4 +1,18 @@
+2012-02-29  Tracy Graydon <tracy.graydon@intel.com>
+
+  * VERSION: Version bump 0.12
+
+  * packaging/image-configurations.spec: spec
+
+  * configurations.yaml: Compress IVI images
+
 2012-02-28  Tracy Graydon <tracy.graydon@intel.com>
+
+  * VERSION, packaging/image-configurations.spec: omg
+
+  * ChangeLog: Amend to trick gerrit
+
+  * ChangeLog: Changelog
 
   * VERSION, packaging/image-configurations.spec: Version, spec
 

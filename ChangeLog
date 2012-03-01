@@ -1,4 +1,14 @@
+2012-03-01  Tracy Graydon <tracy.graydon@intel.com>
+
+  * VERSION: Version bump to 0.13
+
+  * configurations.yaml: Add bootloader options for IVI
+
 2012-02-29  Tracy Graydon <tracy.graydon@intel.com>
+
+  * ChangeLog: Compress IVI images
+
+  * ChangeLog: Changelog update
 
   * VERSION: Version bump 0.12
 

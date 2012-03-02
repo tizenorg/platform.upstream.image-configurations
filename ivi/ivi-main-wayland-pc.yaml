@@ -8,12 +8,15 @@ Kernel: kernel-adaptation-pc
 Architecture: ia32
 Desktop: None
 Groups:
-    - IVI Support
-    - IVI Wayland for Pinetrail
+    - IVI Support PC
+    - IVI Wayland PC
+    - IVI Desktop PC
+    - IVI Applications
 ExtraPackages:
     - udev-rules-netbook
 RemovePackages:
     - initscripts
+    - insserv
 PostScripts:
     - users
     - rpm

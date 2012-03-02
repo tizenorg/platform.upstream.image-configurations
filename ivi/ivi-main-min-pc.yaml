@@ -8,11 +8,12 @@ Kernel: kernel-adaptation-pc
 Architecture: ia32
 Desktop: None
 Groups:
-    - IVI Support
+    - IVI Support PC
 ExtraPackages:
     - udev-rules-netbook
 RemovePackages:
     - initscripts
+    - insserv
 PostScripts:
     - users
     - rpm

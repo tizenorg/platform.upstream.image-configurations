@@ -8,10 +8,11 @@ Kernel: kernel-adaptation-pc
 Architecture: ia32
 Desktop: None
 Groups:
-    - IVI Support
+    - IVI Support PC
     - Base X Server
-    - IVI X for Pinetrail
+    - IVI X PC
 ExtraPackages:
     - udev-rules-netbook
 RemovePackages:
     - initscripts
+    - insserv

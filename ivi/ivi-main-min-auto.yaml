@@ -8,9 +8,10 @@ Kernel: kernel-adaptation-intel-automotive
 Architecture: ia32
 Desktop: None
 Groups:
-    - IVI Support
+    - IVI Support Auto
 RemovePackages:
     - initscripts
+    - insserv
 PostScripts:
     - users
     - rpm

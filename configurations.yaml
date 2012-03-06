@@ -39,13 +39,13 @@ Handset:
 IVI:
     PartSize: 2200
     Bootloader: True
-    BootloaderAppend: "rootwait rootfstype=ext4"
+    BootloaderAppend: "rootwait" "rootfstype=ext4"
     BootloaderTimeout: 0
     SaveRepos: True
     StartX: False
     Architecture: ia32
     Desktop: None
-    Mic2Options: -f raw --compress-disk-image=bz2
+    Mic2Options: -f raw --copy-kernel --compress-disk-image=bz2
     Groups:
         - IVI Base
     Repos:

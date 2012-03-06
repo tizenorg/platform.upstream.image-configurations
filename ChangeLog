@@ -1,4 +1,12 @@
+2012-03-05  Tracy Graydon <tracy.graydon@intel.com>
+
+  * VERSION, configurations.yaml: Add copy-kernel option for IVI images
+
 2012-03-01  Tracy Graydon <tracy.graydon@intel.com>
+
+  * ChangeLog: Amend to trick gerrit
+
+  * ChangeLog: changelog update
 
   * VERSION, ivi/ivi-main-min-auto.yaml, ivi/ivi-main-min-pc.yaml,
   ivi/ivi-main-wayland-auto.yaml, ivi/ivi-main-wayland-pc.yaml,

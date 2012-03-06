@@ -39,7 +39,7 @@ Handset:
 IVI:
     PartSize: 2200
     Bootloader: True
-    BootloaderAppend: "rootwait" "rootfstype=ext4"
+    BootloaderAppend: "rootwait rootfstype=ext4"
     BootloaderTimeout: 0
     SaveRepos: True
     StartX: False

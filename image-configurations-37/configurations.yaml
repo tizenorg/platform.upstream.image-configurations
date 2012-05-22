@@ -1,0 +1,84 @@
+ExternalConfigs:
+  - handset
+  - ivi
+
+Default:
+    Baseline: tizen-0.0
+    FileSystem: ext3
+    Active: True
+    Language: en_US.UTF-8
+    Keyboard: us
+    SaveRepos:  True
+    Timezone: America/Los_Angeles
+    RootPass: tizen
+    DefaultUser: tizen
+    DefaultUserPass: tizen
+    PartSize: 1900
+    BootloaderOptions: ""
+
+Handset:
+    PartSize: 1024
+    Bootloader: True
+    BootloaderAppend: "rootdelay=5"
+    BootloaderTimeout: 0
+    SaveRepos:  True
+    Architecture: ia32
+    Desktop: None
+    Groups:
+        - Base System
+        - Base X Server
+        - Tizen UI
+        - Tizen APIs
+        - Development Tools
+    Repos:
+        - Tizen-base
+        - Tizen-main
+        - Tizen-base-debug
+        - Tizen-main-debug
+
+Handset-1.0:
+    PartSize: 1200
+    Bootloader: True
+    BootloaderAppend: "rootdelay=5"
+    BootloaderTimeout: 0
+    SaveRepos:  True
+    Architecture: ia32
+    Desktop: None
+    Groups:
+        - Base System
+        - Base X Server
+        - Tizen UI
+        - Tizen APIs
+        - Development Tools
+    Repos:
+        - Tizen-1.0-base
+
+IVI:
+    PartSize: 2200
+    Bootloader: True
+    BootloaderAppend: "rootwait rootfstype=ext4"
+    BootloaderTimeout: 0
+    SaveRepos: False
+    StartX: False
+    Architecture: ia32
+    Desktop: None
+    Groups:
+        - IVI Base
+    Repos:
+        - Tizen-base
+        - Tizen-ivi
+
+IVI-1.0:
+    PartSize: 2200
+    Bootloader: True
+    BootloaderAppend: "rootwait rootfstype=ext4"
+    BootloaderTimeout: 0
+    SaveRepos: False
+    StartX: False
+    Architecture: ia32
+    Desktop: None
+    Groups:
+        - IVI Base
+    Repos:
+        - Tizen-1.0-base
+        - Tizen-1.0-ivi

@@ -1,0 +1,20 @@
+Name: Tizen IVI X Auto
+Active: True
+Platform: IVI
+FileName: ivi-x-auto
+Part: tizen-ivi
+Kernel: kernel-adaptation-intel-automotive
+Architecture: ia32
+Desktop: None
+Mic2Options: -f raw --copy-kernel  --compress-disk-image=bz2
+Groups:
+    - IVI Support Auto
+    - IVI X Auto
+RemovePackages:
+    - initscripts
+    - insserv
+PostScripts:
+    - users
+    - rpm
+Repos: 
+    - Tizen-non-oss

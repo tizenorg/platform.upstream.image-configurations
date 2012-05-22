@@ -1,0 +1,20 @@
+Name: Tizen IVI Min PC
+Active: True
+Platform: IVI
+FileName: ivi-min-pc
+Part: tizen-ivi
+Kernel: kernel-adaptation-pc
+Architecture: ia32
+Desktop: None
+Mic2Options: -f raw --copy-kernel --compress-disk-image=bz2
+Groups:
+    - IVI Support PC
+ExtraPackages:
+    - udev-rules-netbook
+RemovePackages:
+    - initscripts
+    - insserv
+PostScripts:
+    - users
+    - rpm
+    - ivi-x11

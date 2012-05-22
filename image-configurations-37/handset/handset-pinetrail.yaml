@@ -1,0 +1,14 @@
+Name: Tizen Handset Pinetrail
+Schedule: "*"
+Active: True
+Platform: Handset
+FileName: handset-pinetrail
+Part: tizen-handset
+Mic2Options: -f raw --copy-kernel  --compress-disk-image=bz2
+Groups:
+    - Pinetrail Support
+PostScripts:
+    - users
+    - rpm
+Repos:
+    - Tizen-pr3

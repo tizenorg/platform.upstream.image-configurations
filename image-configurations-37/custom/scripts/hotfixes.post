@@ -1,0 +1,28 @@
+
+rm -f /usr/bin/rotate.sh
+
+ln -sf /opt/etc/localtime /etc
+
+ail_initdb
+
+rm -rf /usr/include
+rm -rf /usr/share/man
+rm -rf /usr/share/doc
+
+# some compnents look for this file
+MAJOR="1"
+MINOR="0"
+cat >/etc/info.ini <<EOF
+[Version]
+Major=$MAJOR;
+Minor=$MINOR;
+Build=TIZEN_`date +%Y%m%d`_1;
+Order=;
+[Build]
+Date=`date +%Y.%m.%d`;
+Time=`date +%H:%M:%S`;
+EOF
+
+ln -sf /etc/info.ini /opt/etc/info.ini
+ln -sf /etc/info.ini /usr/etc/info.ini
+

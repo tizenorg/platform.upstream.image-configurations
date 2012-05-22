@@ -1,0 +1,18 @@
+Name: Tizen IVI Min Auto
+Active: True
+Platform: IVI
+FileName: ivi-min-auto
+Part: tizen-ivi
+Kernel: kernel-adaptation-intel-automotive
+Architecture: ia32
+Desktop: None
+Mic2Options: -f raw --copy-kernel --compress-disk-image=bz2
+Groups:
+    - IVI Support Auto
+RemovePackages:
+    - initscripts
+    - insserv
+PostScripts:
+    - users
+    - rpm
+    - ivi-x11

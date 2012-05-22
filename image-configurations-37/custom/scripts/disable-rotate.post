@@ -1,3 +1,0 @@
-# Disable X rotate in xinitrc which causes 180 degrees rotated display on BB
-# with PVR drivers
-sed -i s'/^\(.*rotate\.sh.*\)/#\1/' /usr/etc/X11/xinitrc

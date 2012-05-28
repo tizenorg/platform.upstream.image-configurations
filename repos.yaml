@@ -1,31 +1,25 @@
 Repositories:
     -   Name: Tizen-base
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzbase/@ARCH@/packages/
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/base/@ARCH@/packages/
         Options: --save  --ssl_verify=no
     -   Name: Tizen-base-debug
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzbase/@ARCH@/debug/
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/base/@ARCH@/debug/
         Options: --save  --ssl_verify=no
     -   Name: Tizen-main
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzmain/@ARCH@/packages/
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/main/@ARCH@/packages/
         Options: --save  --ssl_verify=no
     -   Name: Tizen-main-debug
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzmain/@ARCH@/debug
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/main/@ARCH@/debug
         Options: --save  --ssl_verify=no
-    -   Name: Tizen-main-public
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzmain-pub/@ARCH@/packages/
-        Options: --save --ssl_verify=no
-    -   Name: Tizen-main-rs
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzmain-rs/@ARCH@/packages/
-        Options: --save --ssl_verify=no
     -   Name: Tizen-non-oss
         Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/non-oss/@ARCH@/packages/
         Options: --save  --ssl_verify=no
-    -   Name: Tizen-pr3
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzpr3/@ARCH@/packages/
+    -   Name: Tizen-mobile
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/mobile/@ARCH@/packages/
         Options: --save  --ssl_verify=no
     -   Name: Tizen-pr3-debug
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzpr3/@ARCH@/debug
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/mobile/@ARCH@/debug
         Options: --save  --ssl_verify=no
     -   Name: Tizen-ivi
-        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/tzivi/@ARCH@/packages/
+        Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/ivi/@ARCH@/packages/
         Options: --save  --ssl_verify=no

@@ -17,7 +17,7 @@ Repositories:
     -   Name: Tizen-mobile
         Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/mobile/@ARCH@/packages/
         Options: --save  --ssl_verify=no
-    -   Name: Tizen-pr3-debug
+    -   Name: Tizen-mobile-debug
         Url:  https://download.tz.otcshare.org/snapshots/@BUILD_ID@/repos/mobile/@ARCH@/debug
         Options: --save  --ssl_verify=no
     -   Name: Tizen-ivi

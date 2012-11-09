@@ -10,6 +10,7 @@ Source:		image-configurations-%{version}.tar.bz2
 
 BuildArch:	noarch
 BuildRequires:  kickstarter >= 0.15
+BuildRequires:  meta-base
 
 %description
 Create Configuration files to build Tizen images 

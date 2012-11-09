@@ -1,3 +1,0 @@
-# Boot with full UX. 
-ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
-

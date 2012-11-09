@@ -1,5 +1,0 @@
-mkdir -p /opt/home/app
-chown inhouse: /opt/home/app
-mkdir -p /home
-ln -s /opt/home/app /home/app
-ln -sf /opt/home/root /root

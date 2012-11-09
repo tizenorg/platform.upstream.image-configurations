@@ -11,6 +11,7 @@ Source:		image-configurations-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:  kickstarter >= 0.15
 BuildRequires:  meta-base
+BuildRequires:  meta-pc
 
 %description
 Create Configuration files to build Tizen images 
@@ -20,7 +21,11 @@ Create Configuration files to build Tizen images
 
 
 %build
-kickstarter -c /usr/share/image-configurations/base/base.yaml -r /usr/share/image-configurations/base/base-repos.yaml -i image-configs.xml
+kickstarter -c /usr/share/image-configurations/base/base.yaml \
+    -e /usr/share/image-configurations/base/configs \
+    -e /usr/share/image-configurations/pc/configs \
+    -r /usr/share/image-configurations/pc/pc-repos.yaml \
+    -r /usr/share/image-configurations/base/base-repos.yaml -i image-configs.xml
 
 %install
 

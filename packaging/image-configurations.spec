@@ -20,7 +20,7 @@ Create Configuration files to build Tizen images
 
 
 %build
-kickstarter -c /usr/share/image-configurations/base/base.yaml -r /usr/share/image-configurations/base/repos.yaml -i image-configs.xml
+kickstarter -c /usr/share/image-configurations/base/base.yaml -r /usr/share/image-configurations/base/base-repos.yaml -i image-configs.xml
 
 %install
 

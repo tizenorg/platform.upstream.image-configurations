@@ -1,16 +1,23 @@
+%if %{defined profile}
+%define _profile %profile
+%else
+%define _profile base
+%endif
+
 %define baseline tizen-3.0
+
 Summary:	Create kickstart files for Tizen images
 Name:		image-configurations
 Version:	101
 Release:	1
-License:	GPLv2
+License:	GPL-2.0
 Group:		System/Base
 URL:		http://www.tizen.org
 Source:		image-configurations-%{version}.tar.bz2
 
 BuildArch:	noarch
 BuildRequires:  kickstarter >= 0.15
-BuildRequires:  meta-base
+BuildRequires:  meta-%{_profile}
 BuildRequires:  meta-common
 
 %description
@@ -21,9 +28,9 @@ Create Configuration files to build Tizen images
 
 
 %build
-kickstarter -c /usr/share/image-configurations/base/base.yaml \
-    -e /usr/share/image-configurations/base/configs \
-    -r /usr/share/image-configurations/base/base-repos.yaml -i image-configs.xml
+kickstarter -c /usr/share/image-configurations/%_profile/%_profile.yaml \
+    -e /usr/share/image-configurations/%_profile/configs \
+    -r /usr/share/image-configurations/%_profile/%_profile-repos.yaml -i image-configs.xml
 
 %install
 

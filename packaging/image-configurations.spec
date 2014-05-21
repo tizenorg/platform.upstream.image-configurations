@@ -19,7 +19,6 @@ Source1001: 	image-configurations.manifest
 BuildArch:	noarch
 BuildRequires:  kickstarter >= 0.15
 BuildRequires:  meta-%{_profile}
-BuildRequires:  meta-common
 
 %description
 Create Configuration files to build Tizen images 

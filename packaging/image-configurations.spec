@@ -31,7 +31,10 @@ cp %{SOURCE1001} .
 %build
 kickstarter -c /usr/share/image-configurations/%_profile/%_profile.yaml \
     -e /usr/share/image-configurations/%_profile/configs \
-    -r /usr/share/image-configurations/%_profile/%_profile-repos.yaml -i image-configs.xml
+    -r /usr/share/image-configurations/%_profile/%_profile-repos.yaml \
+    -T /usr/share/image-configurations/%_profile/%_profile-targets.yaml \
+    -t %{_repository} \
+    -i image-configs.xml
 
 %install
 

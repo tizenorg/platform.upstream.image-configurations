@@ -39,11 +39,10 @@ kickstarter -c /usr/share/image-configurations/%_profile/%_profile.yaml \
 %install
 
 mkdir -p %{buildroot}/usr/share/image-configurations
-cp %{baseline}/*.ks %{buildroot}/usr/share/image-configurations
+[ -n "$(ls -A %{baseline}/*.ks 2>/dev/null)" ] &&  cp %{baseline}/*.ks %{buildroot}/usr/share/image-configurations
 cp image-configs.xml %{buildroot}/usr/share/image-configurations
 
 %files
 %manifest %{name}.manifest
 #%dir %_datadir/image-configurations
-%_datadir/image-configurations/*.ks
-%_datadir/image-configurations/image-configs.xml
+%_datadir/image-configurations/*

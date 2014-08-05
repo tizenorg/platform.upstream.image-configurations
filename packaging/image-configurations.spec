@@ -18,10 +18,11 @@ Source1001: 	image-configurations.manifest
 
 BuildArch:	noarch
 BuildRequires:  kickstarter >= 0.15
+BuildRequires:  meta-generic
 BuildRequires:  meta-%{_profile}
 
 %description
-Create Configuration files to build Tizen images 
+Create Configuration files to build Tizen images
 
 %prep
 %setup -q
@@ -29,10 +30,19 @@ cp %{SOURCE1001} .
 
 
 %build
-kickstarter -c /usr/share/image-configurations/%_profile/%_profile.yaml \
-    -e /usr/share/image-configurations/%_profile/configs \
-    -r /usr/share/image-configurations/%_profile/%_profile-repos.yaml \
-    -T /usr/share/image-configurations/%_profile/%_profile-targets.yaml \
+
+# merge the configuration files from generic and the current profile
+# in the same input dir to make kickstarter aware of the generic scripts.
+mkdir -p input
+for profile in generic %_profile; do
+	pdir=%{_datadir}/image-configurations/$profile
+	[ -d $pdir ] && cp -a $pdir/* input/
+done
+
+kickstarter -c input/%_profile.yaml \
+    -e input/configs \
+    -r input/%_profile-repos.yaml \
+    -T input/%_profile-targets.yaml \
     -t %{_repository} \
     -i image-configs.xml
 
